@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090914">
+  <meta name="description" content="AnimeVietsub - khám phá thế giới anime.">
+  <title>AnimeVietsub — Thế giới anime</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="AnimeVietsub trang chủ"><span class="brand-mark">▶</span><span>Anime<span class="accent">Vietsub</span></span></a>
+    <nav class="desktop-nav"><a class="active" href="#home">Trang chủ</a><a href="#catalog">Anime</a><a href="#genres">Thể loại</a><a href="#about">Giới thiệu</a></nav>
+    <form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="Tìm tên anime..." aria-label="Tìm anime"><button aria-label="Tìm kiếm">⌕</button></form>
+    <button class="menu-btn" id="menuBtn" aria-label="Mở menu">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">ANIMEVIETSUB ORIGINAL EXPERIENCE</p>
+        <span class="tag">ĐỀ XUẤT HÔM NAY</span>
+        <h1>Thế giới anime<br><span class="gradient">trong tầm tay</span></h1>
+        <p class="hero-copy">Khám phá những câu chuyện tuyệt vời, tìm anime yêu thích và tiếp tục hành trình của bạn.</p>
+        <div class="hero-actions"><a class="btn primary" href="#catalog">Khám phá anime <span>→</span></a><a class="btn ghost" href="#about">Tìm hiểu thêm</a></div>
+      </div>
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="hero-note"><span class="live-dot"></span> KHÔNG GIAN DÀNH CHO FAN ANIME</div>
+    </section>
+
+    <section class="section" id="catalog">
+      <div class="section-heading"><div><p class="eyebrow">KHÁM PHÁ</p><h2>Anime nổi bật</h2></div><span class="muted" id="resultCount">Bộ sưu tập mẫu</span></div>
+      <div class="filters" id="genres">
+        <button class="chip selected" data-genre="Tất cả">Tất cả</button>
+        <button class="chip" data-genre="Hành động">Hành động</button>
+        <button class="chip" data-genre="Phiêu lưu">Phiêu lưu</button>
+        <button class="chip" data-genre="Tình cảm">Tình cảm</button>
+        <button class="chip" data-genre="Giả tưởng">Giả tưởng</button>
+      </div>
+      <div class="anime-grid" id="animeGrid"></div>
+      <p class="empty hidden" id="emptyState">Không tìm thấy anime phù hợp.</p>
+    </section>
+
+    <section class="continue section">
+      <div><p class="eyebrow">HÀNH TRÌNH CỦA BẠN</p><h2>Tiếp tục khám phá</h2><p class="muted">Danh sách yêu thích được lưu ngay trên thiết bị của bạn.</p></div>
+      <button class="btn ghost" id="favoritesBtn">♡ Anime yêu thích</button>
+    </section>
+    <section class="section about" id="about"><p class="eyebrow">ANIMEVIETSUB</p><h2>Một nơi dành cho đam mê anime.</h2><p class="muted">Giao diện trình diễn có thể kết nối với API hoặc nguồn nội dung mà bạn được cấp quyền sử dụng. Nội dung mẫu bên dưới chỉ phục vụ minh họa.</p></section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">▶</span><span>Anime<span class="accent">Vietsub</span></span></a><span>© 2026 AnimeVietsub · Giao diện demo</span></footer>
+
+  <dialog id="detailDialog" class="detail-dialog">
+    <button class="close" id="closeDialog" aria-label="Đóng">×</button>
+    <div id="detailContent"></div>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
